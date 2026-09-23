@@ -98,6 +98,7 @@ O pipeline ETL (Extract, Transform, Load) foi desenvolvido em linguagem **PySpar
 *Scripts completos do pipeline:*
 - [`notebooks/01_ingestao_bronze.ipynb`](./notebooks/01_ingestao_bronze.ipynb)
 - [`notebooks/02_limpeza_silver.ipynb`](./notebooks/02_limpeza_silver.ipynb)
+- [`notebooks/03_modelagem_gold.ipynb`](./notebooks/03_modelagem_gold.ipynb)
 
 ![Execução do notebook de pipeline e persistência das tabelas Delta](assets/screenshot_03_pipeline_execution.png)  
 
@@ -117,6 +118,9 @@ Durante a fase de diagnóstico e refino da camada Silver, foram identificados e 
 ---
 
 ## 6. Análise de Dados (Etapa 4.5)
+
+script completo:
+- [`notebooks/04_analise_negocios.sql.ipynb`](./notebooks/04_analise_negocios.sql.ipynb)
 
 Abaixo estão as consultas SQL executadas na camada Gold para responder às perguntas do objetivo do projeto:
 
