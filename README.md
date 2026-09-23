@@ -74,6 +74,7 @@ O projeto adota a **Arquitetura Medalhão** dentro do conceito de **Data Lakehou
 - `product_category_name` (STRING): Nome padronizado da categoria do produto.
 
 ![Visão das tabelas e esquemas estruturados no Unity Catalog do Databricks](assets/screenshot_02_unity_catalog.png)  
+
 *Figura 2: Estrutura do modelo de dados e tabelas persistidas no catálogo do Databricks.*
 
 ---
@@ -95,10 +96,11 @@ O pipeline ETL (Extract, Transform, Load) foi desenvolvido em linguagem **PySpar
    - Criação e persistência das tabelas Fato e Dimensão na camada Gold.
 
 *Scripts completos do pipeline:*
-- [`notebooks/01_bronze_to_silver.py`](./notebooks)
-- [`notebooks/02_silver_to_gold.py`](./notebooks)
+- [`notebooks/01_ingestao_bronze.ipynb`](./notebooks/01_ingestao_bronze.ipynb)
+- [`notebooks/02_limpeza_silver.ipynb`](./notebooks/02_limpeza_silver.ipynb)
 
 ![Execução do notebook de pipeline e persistência das tabelas Delta](assets/screenshot_03_pipeline_execution.png)  
+
 *Figura 3: Execução bem-sucedida das células de código salvando as tabelas Delta na nuvem.*
 
 ---
@@ -121,6 +123,7 @@ Abaixo estão as consultas SQL executadas na camada Gold para responder às perg
 ### 1. Tempo Médio de Entrega e Taxa de Atraso por Estado (UF)
 
 ![Tabela com os resultados da 1° análise](assets/screenshot_04_questao1.png) 
+
 Figura 4: Resultado da análise logística por UF gerado no Databricks.
 
 Discussão dos Resultados:
@@ -129,6 +132,7 @@ A análise revela uma forte assimetria logística no Brasil. Estados da Região 
 ### 2. Top 10 categorias faturamentos
 
 ![Tabela com os resultados da 2° análise](assets/screenshot_05_questao2.png)
+
 Figura 5: Resultado da análise de faturamento por categorias.
 
 Discussão dos Resultados:
@@ -137,6 +141,7 @@ As categorias ligadas a bens de consumo duráveis e decoração de interiores li
 ### 3. Distribuição dos métodos de pagamento e ticket médio
 
 ![Tabela com os resultados da 3° análise](assets/screenshot_06_questao3.png)
+
 Figura 6: Resultado da análise de métodos de pagamento e ticket médio.
 
 Discussão dos Resultados:
