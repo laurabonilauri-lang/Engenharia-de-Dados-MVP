@@ -2,7 +2,8 @@
 
 > **Autor:** Laura Siebert Bonilauri  
 > **Curso / Disciplina:** Engenharia de Dados  
-> **Plataforma:** Databricks Free Edition (Apache Spark & Delta Lake)  
+> **Plataforma:** Databricks Free Edition (Apache Spark & Delta Lake)
+> **Dataset:** https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce  
 
 ---
 
